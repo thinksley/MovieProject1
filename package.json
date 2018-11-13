@@ -1,0 +1,26 @@
+{
+	"name": "MovieProject1",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"dev": "react-native run-ios"
+	},
+	"dependencies": {
+		"react": "16.0.0",
+		"react-native": "0.50.1",
+		"react-native-refresh-list-view": "^1.0.10",
+		"react-native-scrollable-tab-view": "^0.9.0",
+		"react-navigation": "^1.0.0-beta.19"
+	},
+	"devDependencies": {
+		"babel-jest": "23.6.0",
+		"babel-preset-react-native": "4.0.1",
+		"jest": "23.6.0",
+		"react-test-renderer": "16.0.0"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
