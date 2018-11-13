@@ -55,14 +55,14 @@ class HomeListScene extends PureComponent<Props,State>{
             itemElements=(
                 <ItemCellTopic
                     info={rowData.item}
-                    onPress={() => this.props.onGridSelected(rowData.item.url)}
+                    onPress={() => this.props.onGridSelected(rowData.item)}
                 />
             )
         }else{
             itemElements=(
                 <ItemCell 
                     info={rowData.item}
-                    onPress={() => this.props.onGridSelected(rowData.item.url)}
+                    onPress={() => this.props.onGridSelected(rowData.item)}
                 />
             )
         }

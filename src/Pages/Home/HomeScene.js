@@ -23,7 +23,14 @@ class HomeScene extends PureComponent<Props,State>{
         }
     }
     // 一定要用箭头函数
-    onGridSelected  = (url) => {
+    onGridSelected  = (obj) => {
+        let url
+        //如果是图集 就要匹配对应的url规则 eg: https://3g.163.com/ent/photoview/0003/660397.html
+        if(obj.photosetID && obj.photosetID!=''){
+            url = 'http://3g.163.com/ent/photoview/'+obj.photosetID.split('|')[0].slice(4)+'/'+obj.photosetID.split('|')[1]+'.html'
+        } else{
+            url = obj.url
+        }
         this.props.navigation.navigate('DetailScene', {url: url})
     }
 
