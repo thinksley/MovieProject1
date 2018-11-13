@@ -13,4 +13,3 @@ react-native ， javascript
  1. 先下载源代码 
  2. 首先执行 npm install   下载依赖的包
  3. 然后执行 npm run dev   实际上就是运行了 react-native run-ios
- 
