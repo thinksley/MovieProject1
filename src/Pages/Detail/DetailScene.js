@@ -34,11 +34,13 @@ class DetailScene extends PureComponent<Props,State>{
         return (
             <View style={styles.container}>
                 <WebView
+                    startInLoadingState={true}
                     automaticallyAdjustContentInsets={false}
                     style={styles.webView}
                     source={this.state.source}
                     onLoadEnd={(e) => this.onLoadEnd(e)}
                     scalesPageToFit
+                    contentInset={{top:-48}}
                 />
             </View>
         )

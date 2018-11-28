@@ -31,10 +31,9 @@ class HomeListScene extends PureComponent<Props,State>{
         let url = api[this.props.titleId]
         let callback = api[this.props.titleId+'Callback']
         try{
-          let response = await fetch(url)
-          let json = await response.json()
-          return json[callback]
-          
+            let response = await fetch(url)
+            let json = await response.json()
+            return json[callback]
         }catch(e){
             alert('error'+e)
         }
